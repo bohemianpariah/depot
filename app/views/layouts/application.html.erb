@@ -31,12 +31,7 @@
 
       </div>
 
-      <div id="spotlight">
-        <h4>Featured Product</h4>
-        <%= image_tag(Product.latest.image_url) %>
-        <p><%= Product.latest.title %><br>
-        <%= number_to_currency(Product.latest.price) %></p>
-      </div>
+
       <ul>
         <li><a href="<%= store_url %>"><%= t('.home') %></a></li>
         <li><a href="<%= store_url %>"><%= t('.questions') %></a></li>
